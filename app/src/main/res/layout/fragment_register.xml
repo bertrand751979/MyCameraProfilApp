@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Nom du L'etudiant" />
+
+    <EditText
+        android:id="@+id/edit_student_classroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Classe"/>
+
+    <EditText
+        android:id="@+id/edit_student_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Sport"/>
+
+
+    <Button
+        android:id="@+id/btn_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#FF9800"
+        android:text="Prendre une photo"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/edit_camera_picture"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btn_save_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#FF9800"
+        android:layout_marginTop="30dp"
+        android:text="Enregistrer"/>
+
+
+    <TextView
+        android:id="@+id/edit_photo_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="PhotoPath"/>
+
+    <Button
+        android:id="@+id/btn_display_image_from_photoPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#FF9800"
+        android:layout_marginTop="30dp"
+        android:text=" Show Photo Path Image"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/edit_photo_path_image"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
